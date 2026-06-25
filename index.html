@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NexusAI — Enterprise AI Solutions. We architect and deploy enterprise-grade AI systems for intelligent automation and predictive analytics.">
+    <meta name="description"
+        content="NexusAI — Enterprise AI Solutions. We architect and deploy enterprise-grade AI systems for intelligent automation and predictive analytics.">
     <meta name="keywords" content="enterprise AI, machine learning, MLOps, AI consulting, LLM, computer vision, NLP">
     <meta name="author" content="NexusAI">
     <meta name="theme-color" content="#080808">
     <meta property="og:title" content="NexusAI — Enterprise AI Solutions">
-    <meta property="og:description" content="AI that scales your enterprise. Custom AI solutions for forward-thinking organizations.">
+    <meta property="og:description"
+        content="AI that scales your enterprise. Custom AI solutions for forward-thinking organizations.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nexusai.com">
     <meta property="og:image" content="https://nexusai.com/og-image.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="NexusAI — Enterprise AI Solutions">
-    <meta name="twitter:description" content="AI that scales your enterprise. Custom AI solutions for forward-thinking organizations.">
+    <meta name="twitter:description"
+        content="AI that scales your enterprise. Custom AI solutions for forward-thinking organizations.">
     <title>NexusAI — Enterprise AI Solutions | Custom AI Development & Consulting</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Animated Background Canvas -->
-    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
 
     <!-- Sticky Navigation -->
     <nav role="navigation" aria-label="Main navigation">
-        <div class="nav-logo">⬡ NexusAI</div>
+        <div class="nav-logo">
+            <img src="logo.png" alt="NexusAI" class="logo-img">
+        </div>
         <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">☰</button>
         <div class="nav-links" role="menubar">
             <a href="#services" role="menuitem">Services</a>
@@ -35,25 +42,34 @@
             <a href="#testimonials" role="menuitem">Testimonials</a>
             <a href="#contact" role="menuitem">Contact</a>
         </div>
-        <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" aria-label="Book a call">Book a Call</button>
+        <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+            aria-label="Book a call">Book a Call</button>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (now inside the effect wrapper) -->
     <main>
         <section id="hero" aria-labelledby="hero-heading">
+            <div class="effect-wrap" aria-hidden="true">
+                <canvas id="fx"></canvas>
+            </div>
             <div class="hero-inner">
                 <div class="badge reveal" aria-label="Status: Available">
                     <span class="badge-dot" aria-hidden="true"></span> Enterprise AI Transformation
                 </div>
-                <h1 id="hero-heading" class="hero-h1 reveal reveal-delay-1">AI that <em>scales</em><br>your enterprise</h1>
-                <p class="hero-sub reveal reveal-delay-2">We architect and deploy enterprise-grade AI systems — from intelligent automation to predictive analytics — built to transform how your organization operates.</p>
+                <h1 id="hero-heading" class="hero-h1 reveal reveal-delay-1">AI that <em>scales</em><br>your enterprise
+                </h1>
+                <p class="hero-sub reveal reveal-delay-2">We architect and deploy enterprise-grade AI systems — from
+                    intelligent automation to predictive analytics — built to transform how your organization operates.
+                </p>
                 <div class="btn-row reveal reveal-delay-3">
                     <a href="#contact" class="btn-primary" role="button">Get Started Now</a>
                     <a href="#projects" class="btn-outline" role="button">See Case Studies</a>
                 </div>
                 <div class="scroll-hint reveal reveal-delay-4" aria-hidden="true">
                     <span></span>
-                    <div class="scroll-mouse"><div class="scroll-mouse-inner"></div></div>
+                    <div class="scroll-mouse">
+                        <div class="scroll-mouse-inner"></div>
+                    </div>
                     Scroll down to see projects
                 </div>
             </div>
@@ -84,20 +100,24 @@
                     <div class="case-card" tabindex="0" role="article" aria-label="AI Operations case study">
                         <div class="case-visual img-ai" aria-hidden="true">🤖</div>
                         <div class="case-tag">AI Operations</div>
-                        <div class="case-overlay"><a class="case-link" href="#" aria-label="View AI Operations case study">View Case Study ↗</a></div>
+                        <div class="case-overlay"><a class="case-link" href="#"
+                                aria-label="View AI Operations case study">View Case Study ↗</a></div>
                     </div>
                     <div class="case-card" tabindex="0" role="article" aria-label="Predictive Analytics case study">
                         <div class="case-visual img-data" aria-hidden="true">📊</div>
                         <div class="case-tag">Predictive Analytics</div>
-                        <div class="case-overlay"><a class="case-link" href="#" aria-label="View Predictive Analytics case study">View Case Study ↗</a></div>
+                        <div class="case-overlay"><a class="case-link" href="#"
+                                aria-label="View Predictive Analytics case study">View Case Study ↗</a></div>
                     </div>
                     <div class="case-card" tabindex="0" role="article" aria-label="Automation case study">
                         <div class="case-visual img-auto" aria-hidden="true">⚡</div>
                         <div class="case-tag">Automation</div>
-                        <div class="case-overlay"><a class="case-link" href="#" aria-label="View Automation case study">View Case Study ↗</a></div>
+                        <div class="case-overlay"><a class="case-link" href="#"
+                                aria-label="View Automation case study">View Case Study ↗</a></div>
                     </div>
                 </div>
-                <div style="text-align:center;margin-top:48px;display:flex;gap:14px;justify-content:center" class="reveal">
+                <div style="text-align:center;margin-top:48px;display:flex;gap:14px;justify-content:center"
+                    class="reveal">
                     <a href="#" class="btn-outline" role="button">All Projects</a>
                     <a href="#contact" class="btn-primary" role="button">Book a Free Call</a>
                 </div>
@@ -110,7 +130,9 @@
                 <div class="about-grid">
                     <div class="reveal">
                         <h2 id="about-heading" class="about-name">About NexusAI</h2>
-                        <p class="about-bio">We're a specialized enterprise AI consultancy founded by machine learning engineers and enterprise architects. We don't just advise — we build, integrate, and operate AI systems that become the operational backbone of your business.</p>
+                        <p class="about-bio">We're a specialized enterprise AI consultancy founded by machine learning
+                            engineers and enterprise architects. We don't just advise — we build, integrate, and operate
+                            AI systems that become the operational backbone of your business.</p>
                         <div class="divider" aria-hidden="true"></div>
                         <div class="skill-tags" aria-label="Our expertise">
                             <div class="skill-tag">Large Language Models</div>
@@ -121,37 +143,33 @@
                             <div class="skill-tag">Edge Deployment</div>
                         </div>
                         <div class="divider" aria-hidden="true"></div>
-                        <div class="exp-row"><div><div style="font-weight:500;font-size:14px">Enterprise Partner</div><div class="role">Microsoft Azure</div></div><div style="color:var(--muted);font-size:13px">Current</div></div>
-                        <div class="exp-row"><div><div style="font-weight:500;font-size:14px">AI Solutions Provider</div><div class="role">AWS Advanced Tier</div></div><div style="color:var(--muted);font-size:13px">2022–Present</div></div>
-                        <div class="exp-row"><div><div style="font-weight:500;font-size:14px">Google Cloud Partner</div><div class="role">AI & ML Specialization</div></div><div style="color:var(--muted);font-size:13px">2021–Present</div></div>
+                        <div class="exp-row">
+                            <div>
+                                <div style="font-weight:500;font-size:14px">Enterprise Partner</div>
+                                <div class="role">Microsoft Azure</div>
+                            </div>
+                            <div style="color:var(--muted);font-size:13px">Current</div>
+                        </div>
+                        <div class="exp-row">
+                            <div>
+                                <div style="font-weight:500;font-size:14px">AI Solutions Provider</div>
+                                <div class="role">AWS Advanced Tier</div>
+                            </div>
+                            <div style="color:var(--muted);font-size:13px">2022–Present</div>
+                        </div>
+                        <div class="exp-row">
+                            <div>
+                                <div style="font-weight:500;font-size:14px">Google Cloud Partner</div>
+                                <div class="role">AI & ML Specialization</div>
+                            </div>
+                            <div style="color:var(--muted);font-size:13px">2021–Present</div>
+                        </div>
                     </div>
                     <div class="about-image reveal reveal-delay-2" aria-hidden="true">🧠</div>
                 </div>
             </div>
         </section>
 
-        <!-- Recent Works Slider -->
-        <section style="padding:60px 0" aria-labelledby="recent-works-heading">
-            <div class="container">
-                <div class="slider-header">
-                    <h2 id="recent-works-heading">Recent Works <span style="font-size:20px" aria-hidden="true">⬇</span></h2>
-                    <div class="slider-nav" aria-label="Slider controls">
-                        <button class="slider-btn" id="prev-btn" aria-label="Previous slide">←</button>
-                        <button class="slider-btn" id="next-btn" aria-label="Next slide">→</button>
-                    </div>
-                </div>
-                <div class="slider-track-wrap">
-                    <div class="slider-track" id="slider-track" role="list">
-                        <div class="slide-card" role="listitem"><div class="slide-visual img-ai" aria-hidden="true">🤖</div><div class="slide-overlay"><a class="slide-link" href="#" aria-label="View AI Operations case study">View Case Study ↗</a></div></div>
-                        <div class="slide-card" role="listitem"><div class="slide-visual img-data" aria-hidden="true">📊</div><div class="slide-overlay"><a class="slide-link" href="#" aria-label="View Predictive Analytics case study">View Case Study ↗</a></div></div>
-                        <div class="slide-card" role="listitem"><div class="slide-visual img-auto" aria-hidden="true">⚡</div><div class="slide-overlay"><a class="slide-link" href="#" aria-label="View Automation case study">View Case Study ↗</a></div></div>
-                        <div class="slide-card" role="listitem"><div class="slide-visual img-vision" aria-hidden="true">👁️</div><div class="slide-overlay"><a class="slide-link" href="#" aria-label="View Computer Vision case study">View Case Study ↗</a></div></div>
-                        <div class="slide-card" role="listitem"><div class="slide-visual img-nlp" aria-hidden="true">💬</div><div class="slide-overlay"><a class="slide-link" href="#" aria-label="View NLP & LLM case study">View Case Study ↗</a></div></div>
-                        <div class="slide-card" role="listitem"><div class="slide-visual img-edge" aria-hidden="true">🔗</div><div class="slide-overlay"><a class="slide-link" href="#" aria-label="View Edge AI case study">View Case Study ↗</a></div></div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Process Section -->
         <section id="process" aria-labelledby="process-heading">
@@ -160,16 +178,44 @@
                     <div class="process-image reveal" aria-hidden="true">🧪</div>
                     <div class="reveal reveal-delay-1">
                         <div class="process-badge">⊙ Delivery process</div>
-                        <h2 id="process-heading" style="font-size:clamp(48px,6vw,72px);font-weight:800;letter-spacing:-3px;line-height:1;margin-bottom:16px">Process</h2>
-                        <p style="color:var(--muted);font-size:16px;line-height:1.65;margin-bottom:28px">From strategy to production — a proven methodology that gets enterprise AI deployed safely and at scale.</p>
+                        <h2 id="process-heading"
+                            style="font-size:clamp(48px,6vw,72px);font-weight:800;letter-spacing:-3px;line-height:1;margin-bottom:16px">
+                            Process</h2>
+                        <p style="color:var(--muted);font-size:16px;line-height:1.65;margin-bottom:28px">From strategy
+                            to production — a proven methodology that gets enterprise AI deployed safely and at scale.
+                        </p>
                         <div class="btn-row" style="justify-content:flex-start;margin-bottom:48px">
                             <a href="#contact" class="btn-primary" role="button">Book a Free Call</a>
                             <a href="#projects" class="btn-outline" role="button">See Projects</a>
                         </div>
                         <div class="process-steps">
-                            <div class="step-card"><div class="step-num">1</div><div class="step-icon" aria-hidden="true">💡</div><div class="step-title">Discovery & Strategy</div><div class="step-divider" aria-hidden="true"></div><div class="step-desc">We audit your data infrastructure, identify high-impact AI opportunities, and design a roadmap aligned to your business objectives and compliance requirements.</div></div>
-                            <div class="step-card"><div class="step-num">2</div><div class="step-icon" aria-hidden="true">⚙️</div><div class="step-title">Build & Integrate</div><div class="step-divider" aria-hidden="true"></div><div class="step-desc">Our engineers build custom AI models and integrate them directly into your existing tech stack — ERP, CRM, cloud infrastructure — with minimal operational disruption.</div></div>
-                            <div class="step-card"><div class="step-num">3</div><div class="step-icon" aria-hidden="true">🚀</div><div class="step-title">Deploy & Scale</div><div class="step-divider" aria-hidden="true"></div><div class="step-desc">We deploy to production with full MLOps pipelines, monitoring dashboards, and ongoing model retraining — ensuring your AI improves as your business evolves.</div></div>
+                            <div class="step-card">
+                                <div class="step-num">1</div>
+                                <div class="step-icon" aria-hidden="true">💡</div>
+                                <div class="step-title">Discovery & Strategy</div>
+                                <div class="step-divider" aria-hidden="true"></div>
+                                <div class="step-desc">We audit your data infrastructure, identify high-impact AI
+                                    opportunities, and design a roadmap aligned to your business objectives and
+                                    compliance requirements.</div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">2</div>
+                                <div class="step-icon" aria-hidden="true">⚙️</div>
+                                <div class="step-title">Build & Integrate</div>
+                                <div class="step-divider" aria-hidden="true"></div>
+                                <div class="step-desc">Our engineers build custom AI models and integrate them directly
+                                    into your existing tech stack — ERP, CRM, cloud infrastructure — with minimal
+                                    operational disruption.</div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">3</div>
+                                <div class="step-icon" aria-hidden="true">🚀</div>
+                                <div class="step-title">Deploy & Scale</div>
+                                <div class="step-divider" aria-hidden="true"></div>
+                                <div class="step-desc">We deploy to production with full MLOps pipelines, monitoring
+                                    dashboards, and ongoing model retraining — ensuring your AI improves as your
+                                    business evolves.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -233,8 +279,11 @@
                     <div class="process-image reveal" aria-hidden="true">💼</div>
                     <div class="reveal reveal-delay-1">
                         <div class="process-badge">⊙ Reviews</div>
-                        <h2 id="testimonials-heading" style="font-size:clamp(40px,5vw,64px);font-weight:800;letter-spacing:-3px;line-height:1;margin-bottom:16px">Client Reviews</h2>
-                        <p style="color:var(--muted);font-size:16px;line-height:1.65;margin-bottom:32px">Real outcomes from enterprise leaders who trusted NexusAI to transform their operations.</p>
+                        <h2 id="testimonials-heading"
+                            style="font-size:clamp(40px,5vw,64px);font-weight:800;letter-spacing:-3px;line-height:1;margin-bottom:16px">
+                            Client Reviews</h2>
+                        <p style="color:var(--muted);font-size:16px;line-height:1.65;margin-bottom:32px">Real outcomes
+                            from enterprise leaders who trusted NexusAI to transform their operations.</p>
                         <div class="btn-row" style="justify-content:flex-start">
                             <a href="#contact" class="btn-primary" role="button">Book a Free Call</a>
                             <a href="#services" class="btn-outline" role="button">See Services</a>
@@ -247,7 +296,9 @@
                         <div class="testi-name">James Keller</div>
                         <div class="testi-role">CTO at Meridian Corp</div>
                         <div class="testi-divider" aria-hidden="true"></div>
-                        <blockquote class="testi-quote">"NexusAI delivered an intelligent document processing system that reduced our manual review time by 78%. Their team understood our compliance constraints and built something production-ready from day one."</blockquote>
+                        <blockquote class="testi-quote">"NexusAI delivered an intelligent document processing system
+                            that reduced our manual review time by 78%. Their team understood our compliance constraints
+                            and built something production-ready from day one."</blockquote>
                         <div class="stars" aria-label="5 out of 5 stars"><span>5.0</span> ★★★★★</div>
                     </div>
                     <div class="testi-card" role="article" aria-label="Testimonial from Sara Reyes">
@@ -255,7 +306,9 @@
                         <div class="testi-name">Sara Reyes</div>
                         <div class="testi-role">VP Operations, Orion Health</div>
                         <div class="testi-divider" aria-hidden="true"></div>
-                        <blockquote class="testi-quote">"The predictive analytics platform they built for patient flow has genuinely changed how we allocate resources. We saw ROI within 90 days. Highly recommended for any serious enterprise AI initiative."</blockquote>
+                        <blockquote class="testi-quote">"The predictive analytics platform they built for patient flow
+                            has genuinely changed how we allocate resources. We saw ROI within 90 days. Highly
+                            recommended for any serious enterprise AI initiative."</blockquote>
                         <div class="stars" aria-label="5 out of 5 stars"><span>5.0</span> ★★★★★</div>
                     </div>
                     <div class="testi-card" role="article" aria-label="Testimonial from Michael Tan">
@@ -263,14 +316,19 @@
                         <div class="testi-name">Michael Tan</div>
                         <div class="testi-role">Head of Data, Strata Finance</div>
                         <div class="testi-divider" aria-hidden="true"></div>
-                        <blockquote class="testi-quote">"Their MLOps framework is exceptional. We went from model experiments to production deployment in 3 weeks — a process that used to take us 6 months. The monitoring setup alone is worth the engagement."</blockquote>
+                        <blockquote class="testi-quote">"Their MLOps framework is exceptional. We went from model
+                            experiments to production deployment in 3 weeks — a process that used to take us 6 months.
+                            The monitoring setup alone is worth the engagement."</blockquote>
                         <div class="stars" aria-label="5 out of 5 stars"><span>5.0</span> ★★★★★</div>
                     </div>
                 </div>
                 <div class="stats-bar reveal" aria-label="Key statistics">
-                    <div class="stat-item"><span class="stat-num">120+</span><span class="stat-label">enterprise projects delivered.</span></div>
-                    <div class="stat-item"><span class="stat-num">94%</span><span class="stat-label">client satisfaction rate.</span></div>
-                    <div class="stat-item"><span class="stat-num">8+</span><span class="stat-label">years in enterprise AI.</span></div>
+                    <div class="stat-item"><span class="stat-num">120+</span><span class="stat-label">enterprise
+                            projects delivered.</span></div>
+                    <div class="stat-item"><span class="stat-num">94%</span><span class="stat-label">client satisfaction
+                            rate.</span></div>
+                    <div class="stat-item"><span class="stat-num">8+</span><span class="stat-label">years in enterprise
+                            AI.</span></div>
                 </div>
             </div>
         </section>
@@ -281,38 +339,76 @@
                 <div class="faq-grid">
                     <div class="reveal">
                         <div class="process-badge">⊙ FAQ's</div>
-                        <h2 id="faq-heading" style="font-size:clamp(48px,6vw,80px);font-weight:800;letter-spacing:-4px;line-height:1;margin-bottom:16px">Answers</h2>
-                        <p style="color:var(--muted);font-size:16px;line-height:1.65;max-width:380px">Find answers to common questions about our AI process, deployment timelines, and engagement models.</p>
+                        <h2 id="faq-heading"
+                            style="font-size:clamp(48px,6vw,80px);font-weight:800;letter-spacing:-4px;line-height:1;margin-bottom:16px">
+                            Answers</h2>
+                        <p style="color:var(--muted);font-size:16px;line-height:1.65;max-width:380px">Find answers to
+                            common questions about our AI process, deployment timelines, and engagement models.</p>
                         <div class="faq-image" style="margin-top:40px;position:static" aria-hidden="true">🔬</div>
                     </div>
                     <div class="faq-list reveal reveal-delay-1" role="list" aria-label="Frequently asked questions">
                         <div class="faq-item open" role="listitem">
-                            <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="true">What AI services do you provide?<div class="faq-toggle" aria-hidden="true">+</div></div>
-                            <div class="faq-a">We specialize in enterprise AI strategy, custom model development (LLMs, computer vision, NLP), MLOps infrastructure, and deep integration with existing enterprise systems including ERP, CRM, and cloud platforms.</div>
+                            <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button"
+                                aria-expanded="true">What AI services do you provide?<div class="faq-toggle"
+                                    aria-hidden="true">+</div>
+                            </div>
+                            <div class="faq-a">We specialize in enterprise AI strategy, custom model development (LLMs,
+                                computer vision, NLP), MLOps infrastructure, and deep integration with existing
+                                enterprise systems including ERP, CRM, and cloud platforms.</div>
                         </div>
                         <div class="faq-item" role="listitem">
-                            <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">How do I start working with NexusAI?<div class="faq-toggle" aria-hidden="true">+</div></div>
-                            <div class="faq-a">Book a free discovery call through our website. We'll scope your requirements, assess your data readiness, and present a tailored proposal within 5 business days.</div>
+                            <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button"
+                                aria-expanded="false">How do I start working with NexusAI?<div class="faq-toggle"
+                                    aria-hidden="true">+</div>
+                            </div>
+                            <div class="faq-a">Book a free discovery call through our website. We'll scope your
+                                requirements, assess your data readiness, and present a tailored proposal within 5
+                                business days.</div>
                         </div>
                         <div class="faq-item" role="listitem">
-                            <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">How long does a typical project take?<div class="faq-toggle" aria-hidden="true">+</div></div>
-                            <div class="faq-a">MVP deployments typically take 6–12 weeks. Full-scale enterprise platforms range from 3–6 months. We use agile sprints so you see working software every 2 weeks.</div>
+                            <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button"
+                                aria-expanded="false">How long does a typical project take?<div class="faq-toggle"
+                                    aria-hidden="true">+</div>
+                            </div>
+                            <div class="faq-a">MVP deployments typically take 6–12 weeks. Full-scale enterprise
+                                platforms range from 3–6 months. We use agile sprints so you see working software every
+                                2 weeks.</div>
                         </div>
                         <div class="faq-item" role="listitem">
-                            <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">How do you handle data security and compliance?<div class="faq-toggle" aria-hidden="true">+</div></div>
-                            <div class="faq-a">We operate under enterprise-grade NDAs, SOC 2 compliant infrastructure, and support GDPR, HIPAA, and SOX compliance frameworks. Your data never leaves your approved environment.</div>
+                            <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button"
+                                aria-expanded="false">How do you handle data security and compliance?<div
+                                    class="faq-toggle" aria-hidden="true">+</div>
+                            </div>
+                            <div class="faq-a">We operate under enterprise-grade NDAs, SOC 2 compliant infrastructure,
+                                and support GDPR, HIPAA, and SOX compliance frameworks. Your data never leaves your
+                                approved environment.</div>
                         </div>
                         <div class="faq-item" role="listitem">
-                            <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">Do you offer ongoing support after deployment?<div class="faq-toggle" aria-hidden="true">+</div></div>
-                            <div class="faq-a">Yes. We offer managed MLOps retainers that include model monitoring, retraining, performance reporting, and dedicated engineering support — so your AI systems improve over time.</div>
+                            <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button"
+                                aria-expanded="false">Do you offer ongoing support after deployment?<div
+                                    class="faq-toggle" aria-hidden="true">+</div>
+                            </div>
+                            <div class="faq-a">Yes. We offer managed MLOps retainers that include model monitoring,
+                                retraining, performance reporting, and dedicated engineering support — so your AI
+                                systems improve over time.</div>
                         </div>
                         <div class="faq-item" role="listitem">
-                            <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">What industries do you serve?<div class="faq-toggle" aria-hidden="true">+</div></div>
-                            <div class="faq-a">Healthcare, financial services, logistics, manufacturing, legal, and professional services. Any industry with complex data workflows and high manual processing overhead is a strong fit.</div>
+                            <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button"
+                                aria-expanded="false">What industries do you serve?<div class="faq-toggle"
+                                    aria-hidden="true">+</div>
+                            </div>
+                            <div class="faq-a">Healthcare, financial services, logistics, manufacturing, legal, and
+                                professional services. Any industry with complex data workflows and high manual
+                                processing overhead is a strong fit.</div>
                         </div>
                         <div class="faq-item" role="listitem">
-                            <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">What is your pricing model?<div class="faq-toggle" aria-hidden="true">+</div></div>
-                            <div class="faq-a">We offer fixed-scope project engagements, time-and-materials retainers, and outcome-based pricing for well-defined automation use cases. We'll recommend the model that best fits your objectives.</div>
+                            <div class="faq-q" onclick="toggleFaq(this)" tabindex="0" role="button"
+                                aria-expanded="false">What is your pricing model?<div class="faq-toggle"
+                                    aria-hidden="true">+</div>
+                            </div>
+                            <div class="faq-a">We offer fixed-scope project engagements, time-and-materials retainers,
+                                and outcome-based pricing for well-defined automation use cases. We'll recommend the
+                                model that best fits your objectives.</div>
                         </div>
                     </div>
                 </div>
@@ -327,10 +423,12 @@
                 <div class="badge"><span class="badge-dot" aria-hidden="true"></span> Available For New Projects</div>
                 <h2 id="footer-heading">Ready to transform your enterprise with AI?</h2>
                 <p>Let's discuss what's possible. One conversation can unlock your next competitive advantage.</p>
-                <a href="mailto:hello@nexusai.com" class="btn-primary" style="font-size:16px;padding:16px 36px" aria-label="Book a free call via email">Book a Free Call</a>
+                <a href="mailto:hello@nexusai.com" class="btn-primary" style="font-size:16px;padding:16px 36px"
+                    aria-label="Book a free call via email">Book a Free Call</a>
             </div>
             <div class="footer-bottom">
-                <div class="footer-email"><a href="mailto:hello@nexusai.com" style="color:var(--muted);text-decoration:none;">hello@nexusai.com</a></div>
+                <div class="footer-email"><a href="mailto:hello@nexusai.com"
+                        style="color:var(--muted);text-decoration:none;">hello@nexusai.com</a></div>
                 <div class="footer-socials" aria-label="Social media links">
                     <a href="#" class="footer-social-link" aria-label="LinkedIn">LinkedIn</a>
                     <span class="footer-sep" aria-hidden="true">|</span>
@@ -345,4 +443,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
